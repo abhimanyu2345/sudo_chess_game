@@ -1,7 +1,15 @@
+:root{
+    color-scheme: light dark;
+}
 
+body
+{
+color-scheme: light dark;
+border: auto;
+}
 #board{
-    width: 800px;
-    height: 800px;
+    width: 720px;
+    height: 720px;
     color: rgb(0, 255, 38);
     background: rgb(83, 82, 82);
     z-index: 0;
@@ -11,8 +19,8 @@
     
 }
 .grey_block , .black_block{
-    width: 100px; 
-    height: 100px;
+    width: 90px; 
+    height: 90px;
     z-index: 0;
 } 
 .grey_block{
@@ -22,7 +30,7 @@
     background-color: #81b64c;
 }
 .element{
-    width: 80px;height: 80px;
+    width: 70px;height: 70px;
 
     margin: 10px;
     z-index: 5;
