@@ -136,7 +136,7 @@
         }
         function isCheckmate(){
         
-        const [whiteKing,blackKing] =[document.getElementById("black_king"),document.getElementById("white_king")];
+        const [whiteKing,blackKing] =[document.getElementById("white_king"),document.getElementById("black_king")];
         if(!whiteKing || !blackKing){
             
             document.querySelectorAll('[draggable]').forEach((x)=>{
