@@ -5,7 +5,7 @@ let Destination_Block;
 let final_position;
 
 
-const MoveList=[""];
+const MoveList=[];
 const turn= 'black';
 const display =document.getElementById('display');
 function isBlackSquare(square) {
@@ -47,6 +47,7 @@ const board = document.querySelector('#board');
         }
         board.appendChild(NewBlock);
     });
+    BoardFlip()
     
 document.querySelectorAll('.squares').forEach(Element=>{
     Element.addEventListener("dragstart",HandleDrag);
@@ -139,7 +140,7 @@ x.setAttribute('block_no', newBlockNo); // Set the new value
 function Logic(){
 
 
-    if((MoveList.length%2==0 &&MovedElement.getAttribute('color')=='black')||(MoveList.length%2==1 && MovedElement.getAttribute('color')=='white')){
+    if((MoveList.length%2==1 &&MovedElement.getAttribute('color')=='black')||(MoveList.length%2==0 && MovedElement.getAttribute('color')=='white')){
         switch(MovedElement.getAttribute('type')){
 
             case'pawn':
