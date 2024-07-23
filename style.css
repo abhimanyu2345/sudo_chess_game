@@ -1,0 +1,50 @@
+
+#board{
+    width: 800px;
+    height: 800px;
+    color: rgb(0, 255, 38);
+    background: rgb(83, 82, 82);
+    z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: #2e2c29;
+    
+}
+.grey_block , .black_block{
+    width: 100px; 
+    height: 100px;
+    z-index: 0;
+} 
+.grey_block{
+    background: #f3db41;
+}
+.black_block{
+    background-color: #81b64c;
+}
+.element{
+    width: 80px;height: 80px;
+
+    margin: 10px;
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+path{
+    z-index: -2;
+}
+svg{
+    z-index: -1;
+    width: auto;
+    height: 100%;
+    display: block;
+
+}
+.white{
+    fill:#f9f9f9;
+    
+}
+.black{
+    fill:#2e2c29;
+}
